@@ -9,7 +9,7 @@ def fetch_resource_arns():
         default_view_arn = "arn:aws:resource-explorer-2:us-east-1:667436281568165:view/all-resources/fc874ae2-4a53-4b7e-a53gdhsag5453hsgvas"
         
         # Query to identify resources missing a specific tag key
-        query_filter = '-tag.key:Lab'
+        query_filter = '-tag.key:ENV'
         
         # List to collect resource ARNs
         resource_arns = []
