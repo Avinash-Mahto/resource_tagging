@@ -58,7 +58,7 @@ def apply_tags_to_resources_by_region(resource_groups):
             if region:
                 tagging_client = boto3.client('resourcegroupstaggingapi', region_name=region)
             else:
-                tagging_client = boto3.client('resourcegroupstaggingapi', region_name="us-east-1")
+                tagging_client = boto3.client('resourcegroupstaggingapi', region_name="ap-southeast-1")
             
             # Split resources into batches of 20 (API limit)
             resource_batches = [resources[i:i + 20] for i in range(0, len(resources), 20)]
